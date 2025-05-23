@@ -4,81 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mamma's Milk & Dad in Command Dispatch Blog</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0;
-      background: #f7f2fa;
-      color: #4a2c54;
-      line-height: 1.5;
-    }
-    header {
-      background: #a47bbf;
-      color: white;
-      padding: 1rem 1.5rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h1, h2 {
-      color: #663366;
-    }
-    .intro {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    .blog-post {
-      background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-    .blog-post h3 {
-      margin-top: 0;
-      color: #8e44ad;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #a47bbf;
-      color: white;
-      margin-top: 3rem;
-    }
-    footer a {
-      color: #f9e2f9;
-      text-decoration: underline;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-      main {
-        margin: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -96,31 +22,30 @@
       <p>Plus, find tips and stories for dads navigating large family life — from budgeting to fun trips and everyday chaos.</p>
       <p><strong>Try the app now:</strong> <a href="safesip-signed.apk" target="_blank">Download Breastfeeding Timer</a></p>
     </section>
-        <!-- Insert this inside <main>, after the Home section but before Blog -->
-<section id="app" class="intro">
-  <h2>Download the App</h2>
-  <p><strong>Mamma's Milk – Safe Sip Timer:</strong> This simple timer helps breastfeeding mums track when it's safe to feed again after drinking alcohol. Built with love by a large-family dad who knows how vital it is to support each other.</p>
-  <p>
-    <a href="safesip-signed.apk" download style="display:inline-block; background:#8e44ad; color:#fff; padding:0.75rem 1.5rem; border-radius:8px; text-decoration:none; font-weight:bold;">Download APK</a>
-  </p>
-  <h3>How to Install the App</h3>
-  <ol>
-    <li>Download the APK file above to your Android device.</li>
-    <li>Go to <strong>Settings > Security</strong> and enable <strong>Install unknown apps</strong> (if not already done).</li>
-    <li>Open the APK from your Downloads folder and follow the prompts to install.</li>
-    <li>You're all set — enjoy easy breastfeeding tracking with peace of mind!</li>
-  </ol>
-</section>
 
-<!-- Update your About section like this -->
-<section id="about" class="intro">
-  <h2>About This Site</h2>
-  <p>Created by Jonny, a dad of a large family and maker of the Mamma's Milk breastfeeding timer app. Here to share the joys and challenges of big family life — and support dads stepping up in parenting roles.</p>
-  <p>If you like what you see, you can support me here:</p>
-  <p>
-    <a href="https://www.buymeacoffee.com/jonny752" target="_blank" style="display:inline-block; background:#f9c846; color:#333; padding:0.75rem 1.5rem; border-radius:8px; text-decoration:none; font-weight:bold;">Buy Me a Coffee</a>
-  </p>
-</section>
+    <section id="app" class="intro">
+      <h2>Download the App</h2>
+      <p><strong>Mamma's Milk – Safe Sip Timer:</strong> This simple timer helps breastfeeding mums track when it's safe to feed again after drinking alcohol. Built with love by a large-family dad who knows how vital it is to support each other.</p>
+      <p>
+        <a href="safesip-signed.apk" download class="download-button">Download APK</a>
+      </p>
+      <h3>How to Install the App</h3>
+      <ol>
+        <li>Download the APK file above to your Android device.</li>
+        <li>Go to <strong>Settings > Security</strong> and enable <strong>Install unknown apps</strong>.</li>
+        <li>Open the APK from your Downloads folder and follow the prompts to install.</li>
+        <li>You're all set — enjoy easy breastfeeding tracking with peace of mind!</li>
+      </ol>
+    </section>
+
+    <section id="about" class="intro">
+      <h2>About This Site</h2>
+      <p>Created by Jonny, a dad of a large family and maker of the Mamma's Milk breastfeeding timer app. Here to share the joys and challenges of big family life — and support dads stepping up in parenting roles.</p>
+      <p>If you like what you see, you can support me here:</p>
+      <p>
+        <a href="https://www.buymeacoffee.com/jonny752" target="_blank" class="support-link">Buy Me a Coffee</a>
+      </p>
+    </section>
 
     <section id="blog">
       <h2>Latest Blog Posts</h2>
@@ -142,12 +67,11 @@
         <a href="#readmore3">Read more &raquo;</a>
       </article>
     </section>
-      <p>Created by Jonny, a dad of a large family and maker of the Mamma's Milk breastfeeding timer app. Here to share the joys and challenges of big family life — and support dads stepping up in parenting roles.</p>
-      
-    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Mamma's Milk & Large Family Dads Blog. Made with care by Jonny.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
