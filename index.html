@@ -25,25 +25,14 @@ title: Welcome to Dad in Command
   </ol>
 </section>
 
-<section id="blog">
-  <h2>Latest Blog Posts</h2>
-  <article class="blog-post">
-    <h3>Budgeting Tips for Large Families</h3>
-    <p>Managing money with many kids can be tough. Here are practical ways to save on food, clothes, and activities.</p>
-    <a href="#readmore1">Read more &raquo;</a>
-  </article>
-
-  <article class="blog-post">
-    <h3>Fun Family Trip Ideas</h3>
-    <p>Discover affordable, kid-friendly places to visit that will create lasting memories without breaking the bank.</p>
-    <a href="#readmore2">Read more &raquo;</a>
-  </article>
-
-  <article class="blog-post">
-    <h3>Feeding Strategies for Busy Dads</h3>
-    <p>Quick meal prep and snack hacks that will keep your little ones happy and healthy when mum’s not around.</p>
-    <a href="#readmore3">Read more &raquo;</a>
-  </article>
+<section id="blog" class="blog-post">
+  <h2>Latest Posts</h2>
+  {% for post in site.posts %}
+    <article>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt }}</p>
+    </article>
+  {% endfor %}
 </section>
 
 <section id="about" class="intro">
