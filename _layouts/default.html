@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mamma's Milk & Dad in Command Dispatch Blog</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
     {{ content }}
-  </body>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mamma's Milk & Large Family Dads Blog. Made with care by Jonny.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
 </html>
