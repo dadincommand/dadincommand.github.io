@@ -18,7 +18,7 @@ By the end of that Easter Sunday—somewhere between egg hunts and inflatable wi
 We even tested it on the spot. OH gave it a go, liked it, and we've been fine-tuning it ever since.
 
 You can try it out **right in your browser** before downloading—no install, no fuss:  
-[Try the app online](#) *([Try the app online](https://dadincommand.github.io/assets/safesip.html))*
+[Try the app online](https://dadincommand.github.io/assets/safesip.html)
 
 Want to see the research we based it on? It’s all here:  
 [View our sources and info](#)
