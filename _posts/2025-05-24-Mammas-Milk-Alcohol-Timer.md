@@ -21,6 +21,6 @@ You can try it out **right in your browser** before downloading—no install, no
 [Try the app online](https://dadincommand.github.io/assets/safesip.html)
 
 Want to see the research we based it on? It’s all here:  
-[View our sources and info](#)
+[View our sources and info](https://dadincommand.github.io/assets/breastfreport.html)
 
 Give it a whirl, share it with others, and let me know what you think. It’s made by a parent, for parents—simple, honest, and actually useful.
