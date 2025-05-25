@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breastfeeding Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe0f0, #e6ccff);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      color: #663366;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin: 1rem 0 0.25rem;
+      font-weight: bold;
+    }
+
+    select, input, button {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #cc99ff;
+      margin-bottom: 1rem;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    button {
+      background-color: #ffb3da;
+      color: #663366;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #ff99cc;
+    }
+
+    .result {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #99004d;
+    }
+
+    .container {
+      background: #ffffffcc;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      position: relative;
+    }
+
+    .bmac-button {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      text-decoration: none;
+    }
+
+    .bmac-button img {
+      height: 40px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    .bmac-button span {
+      margin-left: 8px;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #663366;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="bmac-button" href="https://buymeacoffee.com/jonny752" target="_blank">
+      <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me a Coffee">
+      <span>Tip me!</span>
+    </a>
+
+    <h1>Breastfeeding Alcohol Timer</h1>
+    <p>Select what you drank:</p>
+
+    <label for="drinkType">Drink Type:</label>
+    <select id="drinkType" onchange="updateVolumeOptions()">
+      <option value="beer">Beer (5%)</option>
+      <option value="wine">Wine (12%)</option>
+      <option value="spirits">Spirits (40%)</option>
+    </select>
+
+    <label for="volume">Volume (ml):</label>
+    <select id="volume"></select>
+
+    <label for="weight">Your weight (kg) <small>(optional, default 70kg)</small></label>
+    <input type="number" id="weight" min="40" max="130" placeholder="70">
+
+    <br />
+    <button onclick="startTimer()">Add Drink</button>
+    <button onclick="clearDrinks()">Clear Drinks</button>
+
+    <div class="result" id="result"></div>
+    <div class="result" id="countdown"></div>
+    <div class="result" id="bac"></div>
+
+    <p style="font-size: 0.8rem; color: #555; margin-top: 2rem;">
+      <strong>Disclaimer:</strong> This tool is for informational purposes only and provides general guidance based on typical alcohol metabolism rates. It does not replace professional medical advice. Individual metabolism and circumstances can vary. If you are unsure, please consult a healthcare professional before breastfeeding.
+    </p>
+  </div>
+
+<script>
+  let intervalID;
+  let drinks = [];
+
+  const volumeOptions = {
+    beer: [{ value: 330, label: "330ml" }, { value: 500, label: "500ml" }],
+    wine: [{ value: 125, label: "125ml" }, { value: 175, label: "175ml" }, { value: 250, label: "250ml" }],
+    spirits: [{ value: 25, label: "25ml" }, { value: 35, label: "35ml" }]
+  };
+
+  function updateVolumeOptions() {
+    const drinkType = document.getElementById("drinkType").value;
+    const volumeSelect = document.getElementById("volume");
+
+    volumeSelect.innerHTML = "";
+    volumeOptions[drinkType].forEach(option => {
+      const opt = document.createElement("option");
+      opt.value = option.value;
+      opt.textContent = option.label;
+      volumeSelect.appendChild(opt);
+    });
+  }
+
+  function getABV(drinkType) {
+    if (drinkType === "beer") return 5;
+    if (drinkType === "wine") return 12;
+    if (drinkType === "spirits") return 40;
+    return 0;
+  }
+
+  function saveDrinks() {
+    localStorage.setItem("drinks", JSON.stringify(drinks));
+  }
+
+  function loadDrinks() {
+    const saved = localStorage.getItem("drinks");
+    if (saved) {
+      drinks = JSON.parse(saved);
+      drinks.forEach(d => d.startDate = new Date(d.startDate));
+      if (drinks.length > 0) {
+        updateCountdown();
+        if (!intervalID) intervalID = setInterval(updateCountdown, 1000);
+      }
+    }
+  }
+
+  function startTimer() {
+    const drinkType = document.getElementById("drinkType").value;
+    const abv = getABV(drinkType);
+    const vol = parseInt(document.getElementById("volume").value);
+    const weight = parseFloat(document.getElementById("weight").value) || 70;
+
+    if (isNaN(abv) || isNaN(vol)) {
+      document.getElementById("result").innerText = "Please select drink and volume.";
+      return;
+    }
+
+    const units = (abv * vol) / 1000;
+    const r = 0.55;
+    const initialBAC = units * 8 / (weight * r); // mg/ml
+
+    const startDate = new Date();
+
+    drinks.push({ startDate, initialBAC, units });
+    saveDrinks();
+
+    if (!intervalID) intervalID = setInterval(updateCountdown, 1000);
+    updateCountdown();
+  }
+
+  function updateCountdown() {
+    const now = new Date();
+    const eliminationRate = 0.15; // mg/ml/hour
+
+    let totalBAC = 0;
+    let totalUnits = 0;
+
+    drinks.forEach(drink => {
+      const hrsElapsed = (now - new Date(drink.startDate)) / 3600000;
+      const currentBAC = Math.max(0, drink.initialBAC - hrsElapsed * eliminationRate);
+      totalBAC += currentBAC;
+      totalUnits += drink.units;
+    });
+
+    const totalWaitMs = totalUnits * 60 * 60 * 1000;
+    const latestStart = Math.max(...drinks.map(d => new Date(d.startDate).getTime()));
+    const latestSafeTime = latestStart + totalWaitMs;
+
+    if (totalBAC <= 0 || now.getTime() >= latestSafeTime) {
+      clearInterval(intervalID);
+      intervalID = null;
+      drinks = [];
+      saveDrinks();
+      document.getElementById("countdown").innerText = "You can breastfeed now.";
+      document.getElementById("bac").innerText = "Estimated BAC: 0.000 mg/ml";
+      document.getElementById("result").innerText = "";
+      return;
+    }
+
+    const timeLeft = latestSafeTime - now;
+    const hrs = Math.floor(timeLeft / 3600000);
+    const mins = Math.floor((timeLeft % 3600000) / 60000);
+    const secs = Math.floor((timeLeft % 60000) / 1000);
+
+    document.getElementById("result").innerText =
+      `You can safely breastfeed after: ${new Date(latestSafeTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} (based on ${drinks.length} drink${drinks.length > 1 ? "s" : ""})`;
+
+    document.getElementById("countdown").innerText =
+      `Countdown: ${hrs}h ${mins}m ${secs}s`;
+
+    document.getElementById("bac").innerText =
+      `Estimated BAC: ${totalBAC.toFixed(3)} mg/ml`;
+  }
+
+  function clearDrinks() {
+    clearInterval(intervalID);
+    intervalID = null;
+    drinks = [];
+    saveDrinks();
+    document.getElementById("result").innerText = "";
+    document.getElementById("countdown").innerText = "";
+    document.getElementById("bac").innerText = "";
+  }
+
+  // Initialize on load
+  window.onload = function () {
+    updateVolumeOptions();
+    loadDrinks();
+  };
+</script>
+</body>
+</html>
