@@ -2,7 +2,8 @@
 layout: default
 title: Alcohol Consumption During Breastfeeding: An Evidence-Based Report
 description: A comprehensive, evidence-based report on alcohol consumption while breastfeeding, drawing from guidelines by NHS, La Leche League, and UNICEF.
-image: /assets/social-share-breastfreport.jpg # Optional: Path to a social sharing image for this report
+image: /assets/social-share-breastfreport.jpg
+# Optional: Path to a social sharing image for this report
 ---
 
 # Alcohol Consumption During Breastfeeding: An Evidence-Based Report
