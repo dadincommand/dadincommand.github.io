@@ -1,5 +1,40 @@
-title: Dad in Command
-description: A blog and resource hub for large families
-baseurl: "" # Leave blank for GitHub Pages root site
-url: "https://dadincommand.github.io"
-theme: minima
+# Site settings
+title: Mamma's Milk & Dad in Command
+description: This site supports breastfeeding mums with a helpful alcohol safety timer and shares real-life parenting stories from a dad of eight.
+author: Jonny
+email: your_email@example.com # Optional: Your contact email
+timezone: Europe/London # Set your timezone, e.g., America/New_York, Europe/London
+
+# Base URL (for GitHub Pages deployment)
+# If your site is at https://username.github.io/reponame/, set baseurl: "/reponame/"
+# If your site is at https://username.github.io/, set baseurl: ""
+baseurl: "" # Update this if your site is in a subdirectory
+
+# URL (your domain)
+# For GitHub Pages, this will be your actual domain, e.g., https://username.github.io
+url: "https://dadincommand.github.io" # IMPORTANT: Replace with your actual GitHub Pages URL
+
+# Jekyll build settings
+markdown: kramdown
+theme: minima # You can keep or remove this. If you heavily customize, you might not need a theme.
+permalink: /blog/:title/ # Permalink structure for blog posts (e.g., /blog/my-awesome-post/)
+
+# Plugins
+plugins:
+  - jekyll-feed    # Generates an Atom feed for your posts
+  - jekyll-sitemap # Generates a sitemap.xml for SEO
+  - jekyll-seo-tag # Enhances SEO metadata
+
+# Exclude from processing (optional)
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
