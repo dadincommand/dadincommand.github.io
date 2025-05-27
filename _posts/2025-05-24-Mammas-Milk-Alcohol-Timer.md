@@ -20,7 +20,7 @@ We even tested it on the spot. OH gave it a go, liked it, and we've been fine-tu
 You can try it out **right in your browser** before downloading—no install, no fuss:  
 [Try the app online](https://dadincommand.github.io/assets/safesip.html)
 
-Want to see the research we based it on? It’s all here:  
-[View our sources and info](breastfreport.md)
+Want to see the research we based it on? It’s all here:
+[View our sources and info]({{ '/breastfreport.html' | relative_url }})
 
 Give it a whirl, share it with others, and let me know what you think. It’s made by a parent, for parents—simple, honest, and actually useful.
