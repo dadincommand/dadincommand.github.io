@@ -10,7 +10,7 @@ image: /assets/social-share-blog.jpg # Optional: Path to a social sharing image 
   {% for post in site.posts %}
     <article>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p> {# Added truncate to excerpt #}
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
       <a href="{{ post.url | relative_url }}" class="read-more">Read More &rarr;</a>
     </article>
   {% endfor %}
