@@ -9,7 +9,7 @@ image: /assets/social-share-about.jpg # Optional: Path to a social sharing image
   <h2>About This Site</h2>
 <p>Hey, I'm Jonny — former soldier, full-time dad, and the slightly frazzled fella behind this site. With eight brilliant (and occasionally feral) kids, life’s never quiet, clean, or on schedule — but it’s always full of heart.</p>
 
-<p>This site is my way of sharing what I've learned the hard way — from breastfeeding support with the <strong><a href="">Mamma's Milk Safe to Feed Timer</a></strong>, to keeping a big family fed, entertained, and mostly alive on a budget.</p>
+<p>This site is my way of sharing what I've learned the hard way — from breastfeeding support with the <strong><a href="app.md">Mamma's Milk Safe to Feed Timer</a></strong>, to keeping a big family fed, entertained, and mostly alive on a budget.</p>
 
 <h3>What You'll Find Here:</h3>
 <ul>
