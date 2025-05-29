@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
   background: #f7f2fa;
-  color: #4a2c54;
-  line-height: 1.6; /* Slightly increased line-height for readability */
+  color: #2c1d30; /* Improved contrast */
+  line-height: 1.6;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #663366;
+  color: #4d1f6f; /* Darker heading colour */
   margin-top: 1.5em;
   margin-bottom: 0.8em;
   line-height: 1.2;
@@ -22,30 +22,30 @@ h3 { font-size: 1.5em; }
 
 /* Links */
 a {
-  color: #8e44ad;
+  color: #6c2f8f; /* Better contrast purple */
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover {
-  color: #732d91;
+  color: #4d1f6f; /* Darker hover purple */
   text-decoration: underline;
 }
 
 /* Header Styles */
 header {
-  background: #a47bbf;
+  background: #8e5cae; /* Darker header for white text */
   color: white;
   padding: 1rem 1.5rem;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for header */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  margin: 0 0 1rem 0; /* Adjust spacing */
+  margin: 0 0 1rem 0;
 }
 
 header .site-title-link {
@@ -63,7 +63,7 @@ header nav a {
   margin: 0 1rem;
   font-weight: bold;
   font-size: 1.1rem;
-  padding: 0.5rem 0.2rem; /* Add padding for active state */
+  padding: 0.5rem 0.2rem;
   transition: all 0.3s ease;
 }
 
@@ -73,8 +73,6 @@ header nav a:hover {
 
 header nav a.active {
   text-decoration: underline;
-  /* You could also add a border-bottom or different color: */
-  /* border-bottom: 2px solid white; */
 }
 
 /* Main Layout */
@@ -85,17 +83,17 @@ main {
 }
 
 /* Sections & Blog Posts */
-.intro, .blog-post, .blog-post-single { /* Added .blog-post-single for individual posts */
+.intro, .blog-post, .blog-post-single {
   background: white;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Slightly softer shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   margin-bottom: 2rem;
 }
 
 .blog-post h3 {
   margin-top: 0;
-  color: #8e44ad;
+  color: #6c2f8f;
   margin-bottom: 0.5rem;
 }
 
@@ -109,19 +107,19 @@ main {
   text-decoration: none;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
-  font-size: 1rem; /* Ensure consistent font size */
-  margin: 0.5rem 0; /* Add some margin for stacking on mobile */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  margin: 0.5rem 0;
 }
 
 .download-button {
-  background-color: #8e44ad;
+  background-color: #6c2f8f;
   color: white;
 }
 
 .download-button:hover {
-  background-color: #732d91;
-  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #4d1f6f;
+  transform: translateY(-2px);
 }
 
 .support-link {
@@ -137,28 +135,28 @@ main {
 /* Footer */
 footer {
   text-align: center;
-  padding: 1.5rem; /* Slightly more padding */
-  background: #a47bbf;
+  padding: 1.5rem;
+  background: #8e5cae;
   color: white;
   margin-top: 3rem;
-  font-size: 0.9em; /* Slightly smaller text */
+  font-size: 0.9em;
 }
 
 footer a {
-  color: #f9e2f9; /* Original color, decent contrast */
+  color: #ffffff; /* Brighter link for contrast */
   text-decoration: underline;
 }
 
 footer a:hover {
-    color: white; /* Brighter on hover */
+  color: #f9f9f9;
 }
 
-/* Blog Post Specific Styles (used in _layouts/post.html) */
+/* Blog Post Specific Styles */
 .post-meta {
   font-size: 0.9em;
-  color: #777;
+  color: #555; /* Darkened for contrast */
   margin-bottom: 1.5rem;
-  text-align: center; /* Center meta for individual posts */
+  text-align: center;
 }
 
 .post-content {
@@ -171,7 +169,7 @@ footer a:hover {
   display: block;
   margin: 1.5rem auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post-content p {
@@ -180,7 +178,7 @@ footer a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin-left: 1.8rem; /* Increased indent */
+  margin-left: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -189,22 +187,22 @@ footer a:hover {
 }
 
 .post-content blockquote {
-  border-left: 5px solid #8e44ad; /* Thicker border */
+  border-left: 5px solid #6c2f8f;
   padding-left: 1.2rem;
-  margin: 2rem 0; /* More vertical space */
+  margin: 2rem 0;
   color: #555;
   font-style: italic;
-  background-color: #fcf6ff; /* Light background for quote */
+  background-color: #fcf6ff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-radius: 0 5px 5px 0; /* Rounded right corners */
+  border-radius: 0 5px 5px 0;
 }
 
 .post-content pre {
   background-color: #eee;
   padding: 1rem;
   border-radius: 8px;
-  overflow-x: auto; /* For code blocks */
+  overflow-x: auto;
 }
 
 .post-content code {
@@ -223,21 +221,21 @@ footer a:hover {
 hr {
   border: none;
   border-top: 1px solid #dcdcdc;
-  margin: 3rem auto; /* More vertical space */
+  margin: 3rem auto;
   width: 70%;
 }
 
 .back-link {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* Mobile Adjustments */
-@media (max-width: 768px) { /* Changed breakpoint slightly */
+@media (max-width: 768px) {
   header nav a {
     display: block;
     margin: 0.5rem 0;
-    font-size: 1rem; /* Slightly smaller font on mobile */
+    font-size: 1rem;
   }
 
   main {
@@ -250,14 +248,13 @@ hr {
 
   .download-button,
   .support-link {
-    display: block; /* Stack buttons vertically */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .post-content ul,
   .post-content ol {
-    margin-left: 1rem; /* Less indent on small screens */
+    margin-left: 1rem;
   }
 }
-
