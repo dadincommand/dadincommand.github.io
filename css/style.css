@@ -8,6 +8,15 @@ body {
   line-height: 1.6;
 }
 
+.site-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #000; /* optional: gives a nice divider */
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #4d1f6f; /* Darker heading colour */
