@@ -17,6 +17,19 @@
 
   {% seo %}
 
+  <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="{{ page.title | escape }}" />
+<meta property="og:description" content="{{ page.description | escape }}" />
+<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/banner.jpg{% endif %}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:type" content="article" />
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ page.title | escape }}" />
+<meta name="twitter:description" content="{{ page.description | escape }}" />
+<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/banner.jpg{% endif %}" />
+
   <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}" />
 
   <title>{{ page.title }} | {{ site.title }}</title>
