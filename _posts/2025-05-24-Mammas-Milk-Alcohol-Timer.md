@@ -3,6 +3,7 @@ title: "Mamma’s Milk: The Story Behind My Breastfeeding Timer App"
 date: 2025-05-24
 layout: post
 tags: [parenting, breastfeeding, apps, development, alcohol and nursing]
+image: /assets/splash.jpg
 ---
 
 So, picture this: it’s Easter weekend, the sun's (sort of) out, and we’d planned a big day out with the kids at the local pub. Before you raise an eyebrow—this place had bouncy castles, face painting, and not one but *two* celebrity rabbits: Peter Rabbit and the Easter Bunny. It was total chaos. The good kind.
