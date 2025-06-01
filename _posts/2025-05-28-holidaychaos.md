@@ -5,7 +5,7 @@ layout: post
 categories: [travel, family, chaos]
 tags: [family holiday, travel with kids, airport madness, parenting fails]
 description: "A brutally honest, slightly traumatic, and definitely unforgettable account of our first big family holiday abroad—with four kids, two Trunkis, and one nervous breakdown waiting to happen."
-image: /assets/travel chaos.jpg
+image: /assets/travelchaos.jpg
 alt_text: "A stressed-looking family of six stands at an airport departures terminal. The mother and father, both wide-eyed with shocked expressions, each push a luggage trolley. The mother also pushes a baby in a stroller. Three young children in front ride colorful Trunki suitcases, all with upset or frustrated faces. The family appears overwhelmed, possibly by travel chaos or airport stress."
 ---
 
