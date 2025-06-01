@@ -20,7 +20,7 @@
   <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="{{ page.title | escape }}" />
 <meta property="og:description" content="{{ page.description | escape }}" />
-<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/banner.jpg{% endif %}" />
+<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: page.image | default: '/assets/banner.jpg' }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:type" content="article" />
 
