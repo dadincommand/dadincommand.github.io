@@ -7,6 +7,7 @@ tags: [family holiday, travel with kids, airport madness, parenting fails]
 description: "A brutally honest, slightly traumatic, and definitely unforgettable account of our first big family holiday abroad—with four kids, two Trunkis, and one nervous breakdown waiting to happen."
 image: /assets/travelchaos.jpg
 alt_text: "A stressed-looking family of six stands at an airport departures terminal. The mother and father, both wide-eyed with shocked expressions, each push a luggage trolley. The mother also pushes a baby in a stroller. Three young children in front ride colorful Trunki suitcases, all with upset or frustrated faces. The family appears overwhelmed, possibly by travel chaos or airport stress."
+og_image: /assets/travelchaos.jpg
 ---
 
 There we were—*a humble family of six*, off on a long-anticipated holiday to Majorca. Flights were booked with TUI, airport parking sorted at East Midlands, spirits relatively high. We had dreams of sandy beaches and cocktails. What we got was a high-stress obstacle course sponsored by Trunki.
