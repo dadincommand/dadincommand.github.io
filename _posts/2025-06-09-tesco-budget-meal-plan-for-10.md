@@ -5,8 +5,8 @@ tags: [budget meals, tesco, big families, cheap shopping, family meals, own bran
 categories: [family life, budgeting, food]
 description: "A budget meal plan and shopping list for families with 8 children, using Tesco's value brands. Debunking the bulk-buying myth and proving cheap food doesn't have to be rubbish!"
 image: /assets/images/feeding-10-budget-tesco.png
-og_image: /assets/images/feeding-10-budget-tesco.png
-twitter_image: /assets/images/feeding-10-budget-tesco.png
+og_image: /assets/feeding-10-budget-tesco.png
+twitter_image: /assets/feeding-10-budget-tesco.png
 ---
 
 ## Feeding 10 on a Tight Budget: Tesco Meal Plan Using Own Brands
