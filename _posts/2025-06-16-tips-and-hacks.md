@@ -5,6 +5,9 @@ date: 2025-06-12
 categories: [family, travel, budgeting]
 tags: [big family, travel hacks, holiday planning, TUI, all inclusive]
 description: Tried-and-tested tips for booking and surviving a family holiday with a small army of kids. Budget tips, booking tricks, and advice from the trenches.
+image: /assets/holiday-hacks.png
+og_image: /assets/holiday-hacks.png
+twitter_image: /assets/holiday-hacks.png
 ---
 
 Booking a holiday with a family of 9 (or 10!) isn’t exactly a walk in the park—it’s more like herding caffeinated goats across an airport car park. We’re heading out as a family of ten this September, but here’s everything we’ve learned from our past trips as a 9-strong clan, including tips to save money, dodge disasters, and get the most out of your holiday without remortgaging the house.
