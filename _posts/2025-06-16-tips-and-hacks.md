@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Holiday Hacks for Families of 9 (and Gearing Up for 10!)"
-date: 2025-06-12
+date: 2025-06-16
 categories: [family, travel, budgeting]
 tags: [big family, travel hacks, holiday planning, TUI, all inclusive]
 description: Tried-and-tested tips for booking and surviving a family holiday with a small army of kids. Budget tips, booking tricks, and advice from the trenches.
