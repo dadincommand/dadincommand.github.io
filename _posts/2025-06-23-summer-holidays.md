@@ -6,8 +6,8 @@ date: 2025-06-23
 author: DadinCommand
 tags: [family fun, school holidays, budgeting, free activities, big families, council events]
 categories: [Parenting, Budgeting, Family Life]
-image: /assets/images/council-events-banner.jpg
-og_image: /assets/images/council-events-banner.jpg
+image: /assets/images/council-events-banner.png
+og_image: /assets/images/council-events-banner.png
 twitter_card: summary_large_image
 keywords: [free kids activities UK, council funded holiday fun, family budgeting tips, big family days out, summer activities Barnsley, local council events]
 ---
