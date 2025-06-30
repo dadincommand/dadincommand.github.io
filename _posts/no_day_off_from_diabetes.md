@@ -117,4 +117,4 @@ Especially then.
 
 ---
 
-🔗 **Related Post**: [The Day Everything Changed – Her Diagnosis & Our First Hospital Stay](/2024/11/13/type1-diagnosis-hospital-journey.html)
+🔗 > 📖 **Related:** [Her Initial Diagnosis & Our Hospital Journey](https://dadincommand.github.io/blog/diabetes/)
