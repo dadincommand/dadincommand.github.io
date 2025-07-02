@@ -9,10 +9,10 @@ tags: [type 1 diabetes, parenting, school struggles, NHS, fatherhood, CGM, insul
 seo:
   title: "No Days Off From Diabetes – Real Talk From a T1D Dad"
   description: "Our story of dealing with school, stress, and the NHS after our daughter’s diagnosis with type 1 diabetes. Honest advice and real experiences."
-og_image: /assets/diagnosis.jpeg
+og_image: /assets/
 twitter_card:
   card: summary_large_image
-  image: /assets/diagnosis.jpeg
+  image: /assets/
 ---
 
 ## The Diagnosis That Changed Everything
