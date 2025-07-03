@@ -83,6 +83,13 @@
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}.Made with Care By Jonny. All rights reserved.</p>
   <p>
   </footer>
+  <script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.site-nav');
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+  </script>
 </body>
 </html>
 
