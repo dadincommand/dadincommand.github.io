@@ -41,15 +41,20 @@
   <img src="{{ '/assets/banner.jpg' | relative_url }}" alt="Dad in Command Dispatches banner" />
   </div>
   
-  <header>
-    <h1><a href="/" class="site-title-link">{{ site.title }}</a></h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
-      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a>
-      <a href="{{ '/app/' | relative_url }}" {% if page.url == '/app/' %}class="active"{% endif %}>App</a>
-      <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
-    </nav>
-  </header>
+<header>
+  <h1><a href="/" class="site-title-link">{{ site.title }}</a></h1>
+
+  <!-- Hamburger button -->
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <!-- Mobile menu -->
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ '/app/' | relative_url }}">App</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+  </nav>
+</header>
 
   <main>
     {{ content }}
