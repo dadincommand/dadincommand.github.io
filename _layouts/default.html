@@ -1,95 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PJSE6EX9W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4PJSE6EX9W');
-</script>
-  
-  <meta name="google-site-verification" content="Oi87Iz4qlF_Y2iF8dEC_1MImwIWZjbfwU1Hyy7TuUzA" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PJSE6EX9W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4PJSE6EX9W');
+  </script>  <meta name="google-site-verification" content="Oi87Iz4qlF_Y2iF8dEC_1MImwIWZjbfwU1Hyy7TuUzA" />
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />{% seo %}
 
-  {% seo %}
-
-  <!-- Open Graph Meta Tags -->
-<meta property="og:title" content="{{ page.title | escape }}" />
-<meta property="og:description" content="{{ page.description | escape }}" />
-<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: page.image | default: '/assets/banner.jpg' }}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-<meta property="og:type" content="article" />
-
-<!-- Twitter Card Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ page.title | escape }}" />
-<meta name="twitter:description" content="{{ page.description | escape }}" />
-<meta name="twitter:image" content="{{ page.twitter_image | prepend: site.url }}" />
-
-  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}" />
-
+  <!-- Open Graph Meta Tags -->  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.og_image | default: page.image | default: '/assets/banner.jpg' }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="article" />  <!-- Twitter Card Tags -->  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title | escape }}" />
+  <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}" />
+  <meta name="twitter:image" content="{{ page.twitter_image | prepend: site.url }}" />  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
-</head>
-  
-<body>
+</head><body>
   <div class="site-banner">
-  <img src="{{ '/assets/banner.jpg' | relative_url }}" alt="Dad in Command Dispatches banner" />
-  </div>
-  
-<header>
-  <h1><a href="/" class="site-title-link">{{ site.title }}</a></h1>
+    <img src="{{ '/assets/banner.jpg' | relative_url }}" alt="Dad in Command Dispatches banner" loading="lazy" />
+  </div>  <header>
+    <h1><a href="/" class="site-title-link">{{ site.title }}</a></h1><!-- Hamburger button -->
+<button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
-  <!-- Hamburger button -->
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+<!-- Mobile menu -->
+<nav class="site-nav">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/blog/' | relative_url }}">Blog</a>
+  <a href="{{ '/app/' | relative_url }}">App</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+</nav>
 
-  <!-- Mobile menu -->
-  <nav class="site-nav">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    <a href="{{ '/app/' | relative_url }}">App</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-  </nav>
-</header>
-
-  <main>
+  </header>  <main>
     {{ content }}
     <div class="social-share">
-  <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url | uri_escape }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer" title="Share on Twitter">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
-      <path d="M23.954 4.569a10 10 0 01-2.825.775 4.932 4.932 0 002.163-2.723 9.861 9.861 0 01-3.127 1.195 4.917 4.917 0 00-8.384 4.482A13.94 13.94 0 011.671 3.149a4.822 4.822 0 001.523 6.574 4.903 4.903 0 01-2.229-.616v.06a4.935 4.935 0 003.946 4.827 4.996 4.996 0 01-2.224.085 4.936 4.936 0 004.604 3.417A9.867 9.867 0 010 19.54a13.905 13.905 0 007.548 2.209c9.057 0 14.01-7.496 14.01-13.986 0-.21-.006-.423-.016-.633a10.012 10.012 0 002.412-2.548l.002-.003z"/>
-    </svg>
-  </a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener noreferrer" title="Share on Facebook">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.499V14.706h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.676V1.325C24 .6 23.4 0 22.675 0z"/>
-    </svg>
-  </a>
+      <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url | uri_escape }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.954 4.569a10 10 0 01-2.825.775 4.932 4.932 0 002.163-2.723 9.861 9.861 0 01-3.127 1.195 4.917 4.917 0 00-8.384 4.482A13.94 13.94 0 011.671 3.149a4.822 4.822 0 001.523 6.574 4.903 4.903 0 01-2.229-.616v.06a4.935 4.935 0 003.946 4.827 4.996 4.996 0 01-2.224.085 4.936 4.936 0 004.604 3.417A9.867 9.867 0 010 19.54a13.905 13.905 0 007.548 2.209c9.057 0 14.01-7.496 14.01-13.986 0-.21-.006-.423-.016-.633a10.012 10.012 0 002.412-2.548l.002-.003z"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.499V14.706h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.676V1.325C24 .6 23.4 0 22.675 0z"/>
+        </svg>
+      </a>
     </div>
-  </main>
-
-  <footer>
+  </main>  <footer>
     <a href="https://www.buymeacoffee.com/jonny752" target="_blank" rel="noopener noreferrer">
-      <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jonny752&button_colour=FFDD00&font_colour=000000&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me a Coffee" style="height: 35px !important;width: auto !important;" >
+      <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jonny752&button_colour=FFDD00&font_colour=000000&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me a Coffee" style="height: 35px; width: auto;">
     </a>
-  </p>
-  <p><a href="https://www.buymeacoffee.com/jonny752" target="_blank" rel="noopener noreferrer">Support Dad in Command on Buy Me a Coffee</a></p>
-    
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}.Made with Care By Jonny. All rights reserved.</p>
-  <p>
-  </footer>
-  <script>
-  const toggleBtn = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-nav');
-  toggleBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-  </script>
-</body>
-</html>
-
+    <p><a href="https://www.buymeacoffee.com/jonny752" target="_blank" rel="noopener noreferrer">Support Dad in Command on Buy Me a Coffee</a></p>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Made with Care by Jonny. All rights reserved.</p>
+  </footer>  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    if (toggleBtn) {
+      const nav = document.querySelector('.site-nav');
+      toggleBtn.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+  </script></body>
+</html>/
