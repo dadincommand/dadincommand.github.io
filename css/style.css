@@ -75,10 +75,10 @@ body {
 .site-banner img {
   width: 100%;
   height: auto;
-  max-height: 250px;
   object-fit: cover;
   display: block;
   border-bottom: 3px solid #000;
+  max-height: 200px;
 }
 
 /* ============================
