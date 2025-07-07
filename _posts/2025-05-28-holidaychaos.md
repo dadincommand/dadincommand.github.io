@@ -10,8 +10,6 @@ alt_text: "A stressed-looking family of six stands at an airport departures term
 og_image: /assets/travelchaos.jpg
 ---
 
-**Dispatch #ii That Time We Took Four Kids to Majorca** (And Survived… Just)
-
 There we were—*a humble family of six*, off on a long-anticipated holiday to Majorca. Flights were booked with TUI, airport parking sorted at East Midlands, spirits relatively high. We had dreams of sandy beaches and cocktails. What we got was a high-stress obstacle course sponsored by Trunki.
 
 ## Act 1: The Great Airport Trek
