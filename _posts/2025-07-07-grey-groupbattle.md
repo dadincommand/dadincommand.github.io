@@ -1,5 +1,5 @@
 ---
-title: "Dispatch #vii: Our Son vs The Grey Group – A Long Road to Dyslexia Screening"
+title: "Dispatch #viii: Our Son vs The Grey Group – A Long Road to Dyslexia Screening"
 date: 2025-07-07
 layout: post
 categories: [Parenting, Education, SEN, Dyslexia]
@@ -9,7 +9,7 @@ author: Dad in Command
 excerpt: "After years of asking questions, raising flags, and watching our son struggle, we finally got an answer. This is the long road to his dyslexia screening."
 ---
 
-## 📡 Dispatch #vii: Our Son vs the Grey Group – Our Long Road to a Dyslexia Screening
+## 📡 Dispatch #viiI:**
 
 There’s something no parent wants to admit—but a lot of us feel it: that gut-twisting moment when you realise your child’s struggling, and no one else seems to notice. Or worse, they *do* notice, but they wave it off with a clipboard and a comforting, “They all develop at different rates.”
 
