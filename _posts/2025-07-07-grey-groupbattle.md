@@ -9,8 +9,6 @@ author: Dad in Command
 excerpt: "After years of asking questions, raising flags, and watching our son struggle, we finally got an answer. This is the long road to his dyslexia screening."
 ---
 
-## 📡 Dispatch #viiI:**
-
 There’s something no parent wants to admit—but a lot of us feel it: that gut-twisting moment when you realise your child’s struggling, and no one else seems to notice. Or worse, they *do* notice, but they wave it off with a clipboard and a comforting, “They all develop at different rates.”
 
 We first clocked something wasn’t right back in **Year 2**, when our son brought home a reading book he’d already read the week before. No big deal, we thought. Maybe it was just a mix-up. Surely he’d be moving up to the next level soon? His older sibling had rocketed through the reading stages at that age and was nearly on free reading. But of course—*you can't compare them*, we were told.
