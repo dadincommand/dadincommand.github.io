@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Holiday Hacks for Families of 9 (and Gearing Up for 10!)"
+title: "Dispatch #v Holiday Hacks for Families of 9 (and Gearing Up for 10!)"
 date: 2025-06-16
 categories: [family, travel, budgeting]
 tags: [big family, travel hacks, holiday planning, TUI, all inclusive]
