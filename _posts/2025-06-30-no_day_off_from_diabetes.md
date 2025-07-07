@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "No Days Off From Diabetes: What Happened When We Ended Up in Hospital With Our Daughter"
+title: "Dispatch #vii No Days Off From Diabetes: What Happened When We Ended Up in Hospital With Our Daughter"
 description: "When our daughter was diagnosed with type 1 diabetes, we were thrown headfirst into hospital stays, blood sugars, and endless advocacy. This is what really happened, starting from day one."
 date: 2025-06-30
 author: DadinCommand
