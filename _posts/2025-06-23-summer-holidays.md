@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Free Days Out, Fencing & Fire Pits: How We Found Epic Summer Activities Through Our Local Council"
+title: "Dispatch #viFree Days Out, Fencing & Fire Pits: How We Found Epic Summer Activities Through Our Local Council"
 description: "From rock climbing to goat walking, here's how we unlocked incredible free summer activities for our kids by following our local council’s updates—no Healthy Holidays eligibility needed."
 date: 2025-06-23
 author: DadinCommand
