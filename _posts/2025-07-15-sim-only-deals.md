@@ -9,8 +9,6 @@ categories: ["Budgeting", "Family Life", "Tech Tips"]
 image: "/assets/images/cheap-sim-deals.jpg"
 ---
 
-## Dispatch #iix – How to Get the Best Deal on SIM-Only 1-Month Rolling Contracts
-
 For years, I was the mug who always had the latest phone, paying top dollar every month like I was made of money. That was fine when it was just me. But now I’ve got a whole rugby team of kids and three of them already need phones — one of them to monitor her diabetes — and another is writing “MOBILE PHONE” in bold on his Christmas list to Santa. Suddenly, that £50+ a month per contract adds up real quick.
 
 So I had a dad epiphany: **new phones don’t do anything groundbreaking**. They just do the same stuff — scrolling, texting, calls, and the occasional dinosaur game — but a bit faster. As long as you’re not stuck with a Nokia 3210 (iconic, but let’s not lie to ourselves), an older Android will do the job.
